@@ -1,6 +1,6 @@
-# Graphics Driver Installer (Pisi Linux / LupuS)
+# PiSiDi (Pisi Linux / LupuS)
 
-**Graphics Driver Installer** is a modern PyQt6 desktop application for Pisi Linux / LupuS designed to automatically detect NVIDIA, AMD, Intel, and Virtual Machine GPU hardware, and provide one-click driver installation, removal, and management through the PiSi package manager.
+**PiSiDi** is a modern PyQt6 desktop application for Pisi Linux / LupuS designed to automatically detect NVIDIA, AMD, Intel, and Virtual Machine GPU hardware, and provide one-click driver installation, removal, and management through the PiSi package manager.
 
 ---
 
@@ -38,67 +38,18 @@
 
 ---
 
-## Installation & Removal
-
-### System Installation
+## Installation & Build
 ```bash
-sudo ./install.sh install
-```
-Installs application files to `/usr/share/graphics-driver-installer`, creates executable binary `/usr/bin/graphics-driver-installer`, installs icons, and adds desktop menu entry (`.desktop`).
+# 1. Clone Repository
+git clone https://github.com/TeknoAnka/pisidi.git
+cd pisidi
 
-### System Uninstallation
-```bash
-sudo ./install.sh uninstall
-```
-Removes installed files, terminal command, icons, and desktop menu entry.
+# 2. Start Build
+chmod +x ./build-pisi.sh
+sudo ./build-pisi.sh
 
----
-
-## Usage
-
-### 1. Launching from Terminal or Application Menu
-```bash
-graphics-driver-installer
-```
-
-### 2. Demo / Simulation Mode
-```bash
-graphics-driver-installer --demo
-```
-
----
-
-## Project Structure
-
-```
-graphics-installer/
-├── main.py                     # Main application entry point and CLI parser
-├── config.py                   # UI constants, color palette, and driver database
-├── i18n.py                     # Internationalization module (English / Turkish)
-├── install.sh                  # System installation and uninstallation script
-├── models/
-│   ├── gpu_device.py           # GPUDevice & DriverOption data models
-│   └── __init__.py
-├── backend/
-│   ├── hardware_detector.py    # GPU hardware detector (lspci, glxinfo, vulkaninfo)
-│   ├── pisi_backend.py         # PiSi package manager interface
-│   ├── worker.py               # Asynchronous QThread workers
-│   └── __init__.py
-└── ui/
-    ├── style.py                # Modern dark theme QSS stylesheet
-    ├── main_window.py          # Main application window and navigation router
-    ├── icon_helper.py          # High-contrast SVG icon renderer
-    ├── components/
-    │   ├── header_bar.py       # Top header status bar and control buttons
-    │   ├── sidebar.py          # Vertical sidebar navigation menu
-    │   ├── gpu_card.py         # GPU card container component
-    │   ├── driver_row.py       # Driver package row item
-    │   └── log_viewer.py       # Live console log viewer
-    └── views/
-        ├── drivers_view.py     # Graphics cards and driver management view
-        ├── sysinfo_view.py     # System and graphics diagnostics view
-        ├── settings_view.py    # Settings and hybrid profile view
-        └── logs_view.py        # Full-page operation log view
+# 3. Install Package
+sudo pisi install ./pisidi-*-x86_64.pisi
 ```
 
 ---
