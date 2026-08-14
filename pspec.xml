@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>pisidi</Name>
-        <Homepage>https://github.com/TeknoAnka/pisidi</Homepage>
+        <Homepage>https://github.com/Antolun/pisidi</Homepage>
         <Packager>
             <Name>Solzic0</Name>
             <Email>solzic0@yandex.com</Email>
@@ -23,7 +23,7 @@
         <Files>
             <Path fileType="executable">/usr/bin/pisidi</Path>
             <Path fileType="data">/usr/share/pisidi</Path>
-            <Path fileType="data">/usr/share/applications/com.teknoanka.pisidi.desktop</Path>
+            <Path fileType="data">/usr/share/applications/com.antolun.pisidi.desktop</Path>
             <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/pisidi.png</Path>
             <Path fileType="doc">/usr/share/doc/pisidi</Path>
         </Files>
@@ -32,7 +32,7 @@
     <History>
         <Update release="1">
             <Date>2026-08-09</Date>
-            <Version>1.2.0</Version>
+            <Version>2.0.0</Version>
             <Comment>PiSiDi package release</Comment>
             <Name>Solzic0</Name>
             <Email>solzic0@yandex.com</Email>

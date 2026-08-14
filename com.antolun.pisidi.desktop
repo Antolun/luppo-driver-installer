@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PiSiDi
+GenericName=PiSi Graphics Driver Installer
+GenericName[tr]=PiSi Graphics Driver Installer
+Comment=Install and manage graphics driver
+Comment[tr]=Grafik sürücülerini indir ve yönet
+Exec=pisidi %u
+Icon=pisidi
+Terminal=false
+Categories=Qt;LupuS;System;Utility;
+Keywords=pisi;pisidi;graphics;installer;
+StartupNotify=true
+StartupWMClass=pisidi

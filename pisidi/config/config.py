@@ -7,7 +7,7 @@ from pisidi.config.i18n import tr
 APP_NAME = tr("app_name")
 APP_SUBTITLE = tr("app_subtitle")
 APP_VERSION = "2.0.0"
-APP_ORGANIZATION = "TeknoAnka"
+APP_ORGANIZATION = "Antolun"
 
 # Color Palette (Modern Dark Theme)
 COLOR_BG_DARK = "#0f172a"        # Main Background

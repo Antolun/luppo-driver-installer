@@ -39,9 +39,10 @@
 ---
 
 ## Installation & Build
+
 ```bash
 # 1. Clone Repository
-git clone https://github.com/TeknoAnka/pisidi.git
+git clone https://github.com/Antolun/pisidi.git
 cd pisidi
 
 # 2. Start Build
