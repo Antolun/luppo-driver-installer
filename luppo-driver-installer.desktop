@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Luppo Driver Installer
+Name[tr]=Luppo Sürücü Kurucu
+GenericName=Luppo Graphics Driver Installer
+GenericName[tr]=Luppo Grafik Sürücü Kurucusu
+Comment=Install and manage graphics driver
+Comment[tr]=Grafik sürücülerini indir ve yönet
+Exec=luppo-driver-installer %u
+Icon=luppo-driver-installer
+Terminal=false
+Categories=Qt;LupuS;System;Utility;
+Keywords=luppo;driver;graphics;installer;
+StartupNotify=true
+StartupWMClass=luppo-driver-installer

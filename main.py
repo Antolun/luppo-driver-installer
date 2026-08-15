@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Main Entry Point for PiSiDi.
+Main Entry Point for Luppo Driver Installer.
 """
 
 import sys
@@ -16,10 +16,10 @@ from PyQt6.QtWidgets import QApplication
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
 
-from pisidi.config.config import APP_NAME, APP_ORGANIZATION, APP_VERSION
-from pisidi.ui.main_window import MainWindow
+from src.config.config import APP_NAME, APP_ORGANIZATION, APP_VERSION
+from src.ui.main_window import MainWindow
 
-from pisidi.config.i18n import tr
+from src.config.i18n import tr
 
 
 def parse_args():
@@ -41,7 +41,7 @@ def main():
     app.setApplicationVersion(APP_VERSION)
 
     # Load application logo icon
-    icon_path = os.path.join(SCRIPT_DIR, "pisidi", "assets", "pisidi.png")
+    icon_path = os.path.join(SCRIPT_DIR, "src", "assets", "favicon.png")
     if os.path.exists(icon_path):
         app_icon = QIcon(icon_path)
         app.setWindowIcon(app_icon)

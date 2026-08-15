@@ -1,6 +1,6 @@
-# PiSiDi (Pisi Linux / LupuS)
+# Luppo Driver Installer (Luppo Package Manager)
 
-**PiSiDi** is a modern PyQt6 desktop application for Pisi Linux / LupuS designed to automatically detect NVIDIA, AMD, Intel, and Virtual Machine GPU hardware, and provide one-click driver installation, removal, and management through the PiSi package manager.
+**Luppo Driver Installer** is a modern PyQt6 desktop application for LupuS designed to automatically detect NVIDIA, AMD, Intel, and Virtual Machine GPU hardware, and provide one-click driver installation, removal, and management through the Luppo package manager.
 
 ---
 
@@ -15,9 +15,9 @@
   - Native support for English and Turkish.
   - Automatically selects the interface language according to system locale settings (defaults to English).
 
-- **PiSi Package Manager Integration:**
-  - Queries driver package status via PiSi Python API and CLI.
-  - Fetches currently installed system driver versions and new available versions from PiSi package repositories.
+- **Luppo Package Manager Integration:**
+  - Queries driver package status via Luppo Python API and CLI.
+  - Fetches currently installed system driver versions and new available versions from Luppo package repositories.
   - Performs package installation, removal, and repository updates using `pkexec` privilege elevation.
   - Non-blocking asynchronous UI powered by `QThread` workers.
 
@@ -30,7 +30,7 @@
 - **Modern PyQt6 Interface:**
   - **Graphics Cards View:** Interactive GPU cards, driver options, version badges, one-click install/remove actions, and reboot notification.
   - **System Diagnostics View:** Detailed system information including desktop environment (X11/Wayland), kernel release, `glxinfo`, `vulkaninfo`, and raw PCI device output.
-  - **Settings & Hybrid Control:** Configure NVIDIA PRIME / Optimus profiles (Offload, High Performance, Integrated) and manage PiSi package repositories or cache.
+  - **Settings & Hybrid Control:** Configure NVIDIA PRIME / Optimus profiles (Offload, High Performance, Integrated) and manage Luppo package repositories or cache.
   - **Live Console Log:** Real-time colored execution logging with auto-scroll and file export options.
 
 - **Demo / Simulation Mode:**
@@ -42,15 +42,15 @@
 
 ```bash
 # 1. Clone Repository
-git clone https://github.com/Antolun/pisidi.git
-cd pisidi
+git clone https://github.com/Antolun/luppo-driver-installer.git
+cd luppo-driver-installer
 
 # 2. Start Build
-chmod +x ./build-pisi.sh
-sudo ./build-pisi.sh
+chmod +x ./build-luppo.sh
+sudo ./build-luppo.sh
 
 # 3. Install Package
-sudo pisi install ./pisidi-*-x86_64.pisi
+sudo luppo install ./luppo-driver-installer-*-x86_64.luppo
 ```
 
 ---
@@ -59,5 +59,5 @@ sudo pisi install ./pisidi-*-x86_64.pisi
 
 - Python 3.8+
 - PyQt6
-- `pisi` package manager (on Pisi Linux / LupuS)
+- `luppo` package manager (on LupuS)
 - System utilities: `lspci` (`pciutils`), `glxinfo` (`mesa-utils`), `vulkaninfo` (`vulkan-tools`)

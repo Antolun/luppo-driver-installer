@@ -1,0 +1,46 @@
+<LUPPO>
+    <Source>
+        <Name>luppo-driver-installer</Name>
+        <Homepage>https://github.com/Antolun/luppo-driver-installer</Homepage>
+        <Packager>
+            <Name>Solzic0</Name>
+            <Email>solzic0@yandex.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <Summary>Luppo Graphics Driver Installer</Summary>
+        <Description>Install Graphics Drivers from Luppo</Description>
+    </Source>
+
+    <Package>
+        <Name>luppo-driver-installer</Name>
+        <RuntimeDependencies>
+            <Dependency>python3</Dependency>
+            <Dependency>python3-pyqt6</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/luppo-driver-installer</Path>
+            <Path fileType="data">/usr/share/luppo-driver-installer</Path>
+            <Path fileType="data">/usr/share/applications/luppo-driver-installer.desktop</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/luppo-driver-installer.png</Path>
+            <Path fileType="doc">/usr/share/doc/luppo-driver-installer</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2026-08-15</Date>
+            <Version>2.0.1</Version>
+            <Comment>PiSi to Luppo</Comment>
+            <Name>Solzic0</Name>
+            <Email>solzic0@yandex.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2026-08-09</Date>
+            <Version>2.0.0</Version>
+            <Comment>PiSiDi package release</Comment>
+            <Name>Solzic0</Name>
+            <Email>solzic0@yandex.com</Email>
+        </Update>
+    </History>
+</LUPPO>
